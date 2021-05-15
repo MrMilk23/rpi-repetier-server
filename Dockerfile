@@ -8,7 +8,7 @@ CMD [ "/usr/local/Repetier-Server/bin/RepetierServer", "-c", "/usr/local/Repetie
 
 RUN apt-get update \
   && apt-get install -y wget \
-  && wget http://download.repetier.com/files/server/debian-armhf/Repetier-Server-0.93.1-Linux.deb -O Repetier.deb \
+  && wget https://download3.repetier.com/files/server/debian-armhf/Repetier-Server-1.0.4-Linux.deb -O Repetier.deb \
   && dpkg --add-architecture armhf \
   && dpkg --unpack Repetier.deb \
   && rm -rf Repetier.deb \
